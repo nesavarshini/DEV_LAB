@@ -1,5 +1,6 @@
 import numpy as np
-
+import pandas as pd
+import matplotlib.pyplot as plt
 arr1 = np.array([1, 2, 3, 4, 5])
 arr2 = np.array([[1, 2, 3], [4, 5, 6]])
 arr3 = np.linspace(0, 1, 5) 
@@ -20,8 +21,6 @@ print("Flattened arr2:", arr2.flatten())
 matrix1 = np.array([[1, 2], [3, 4]])
 matrix2 = np.array([[5, 6], [7, 8]])
 print("Matrix Multiplication:\n", np.dot(matrix1, matrix2))
-
-import pandas as pd
 
 data1 = {
     'Name': ['Alice', 'Bob', 'Charlie'],
@@ -67,8 +66,6 @@ print(df_joined)
 df_joined_outer = df_concat_indexed.join(df_info_indexed, how='outer')
 print("\nOuter Join on index:")
 print(df_joined_outer)
-
-import matplotlib.pyplot as plt
 
 plt.figure()
 plt.plot(df_merged['Name'], df_merged['Score'], marker='o')
